@@ -278,6 +278,11 @@ body, html {
 
 /* Social Icons */
 
+.new-social {
+	float: right;
+	margin: 3% 5% 0 0;
+}
+
 .social-icons {
     float: right;
     width: 35%;
@@ -369,8 +374,6 @@ body, html {
 	text-align: center;
 
 	overflow: hidden;
-
-	border-bottom: 1px solid #7B848B;
 }
 
 .nav ul {
@@ -411,6 +414,13 @@ body, html {
 
 .nav ul li.current-menu-item a, .nav ul li a:hover {
 	color: #FF7000;
+}
+
+.nav-border {
+	border-bottom: 1px solid #7B848B;
+	width:100vw;
+	height:1px;
+	display:block;
 }
 
 /*------------------------------------*\
@@ -1569,6 +1579,23 @@ a:hover, a:active {
 }
 
 @media only screen and (max-device-width: 767px), only screen and (max-width: 371px) {
+.new-social {
+	background: rgba(0, 0, 0, 0.5);
+	top:0;
+	left:0;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	margin: 0px;
+	float: none;
+	height: 57px;
+	text-align: center;
+}
+
+.new-social > div {
+	margin: 13px 0px;
+}
+
 .social-icons {
     background: rgba(0, 0, 0, 0.5);
     top:0;
@@ -1589,7 +1616,24 @@ a:hover, a:active {
 }
 
 @media only screen and (max-device-width: 370px), only screen and (max-width: 320px) {
-.social-icons {
+	.new-social {
+		background: rgba(0, 0, 0, 0.5);
+		top:0;
+		left:0;
+		position: fixed;
+		z-index: 999;
+		width: 100%;
+		margin: 0px;
+		float: none;
+		height: 57px;
+		text-align: center;
+	}
+
+	.new-social > div {
+		margin: 13px 0px;
+	}
+
+	.social-icons {
     background: rgba(0, 0, 0, 0.5);
 }
 .social-icons, .facebook, .instagram, .email {
