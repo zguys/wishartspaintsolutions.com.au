@@ -785,6 +785,20 @@ footer ul {
 	line-height: 1.6em;
 }
 
+.catalogue {
+	background: #e9e9eb;
+}
+
+.catalogue .button {
+	background-color: #54575C;
+	margin-bottom: 80px;
+}
+
+.catalogue .button:hover {
+	background-color: #fff;
+	color: #44bdb3;
+}
+
 .error-page .page-content {
 	font-family: 'Lato', Helvetica, Arial, serif;
 	line-height: 1.6em;
@@ -2136,3 +2150,4 @@ a img.aligncenter {
 		page-break-after:avoid;
 	}
 }
+
